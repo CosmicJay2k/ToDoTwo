@@ -1,0 +1,24 @@
+html{
+  height: 100%;
+  background-image: linear-gradient(rgb(253, 204, 204) 0%, rgb(255, 148, 148) 50%);
+}
+body{
+  text-align: center;
+}
+#mainBox{
+  box-sizing: border-box;
+  width: 400px;
+  margin: auto;
+  background-color: white;
+  box-sizing: 100px;
+  padding: 5px 0px 10px 0px;
+}
+h1{
+  margin: 5px 0px 0px 10px;
+  font-size: 38px;
+}
+#counterHTML{
+  margin: 10px 0px 20px 0px;
+  font-family: arial,sans-serif;
+  font-size: 10px;
+}
