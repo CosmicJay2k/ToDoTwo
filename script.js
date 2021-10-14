@@ -26,7 +26,7 @@ input.addEventListener('keyup', function (e) {
 function addItem() {
   const text = input.value;
   if (text.length == 0) {
-    errorMsg.innerHTML = "Input must not be empty";
+    errorMsg.style.display = "block";
     input.focus();
   }
   else {
@@ -42,17 +42,18 @@ function addItem() {
     trashcan.setAttribute("class", "trashcan");
     item.appendChild(trashcan);
 
+    errorMsg.style.display = "none";
     input.value = "";
     input.focus();
 
     /* Completed or not method */
     itemLabel.addEventListener("click", function () {
-      if (itemLabel.getAttribute("class") == "completed") {
+      if (itemLabel.getAttribute("class") == "item-completed") {
         itemLabel.setAttribute("class", "");
         completedCounter--;
       }
       else {
-        itemLabel.setAttribute("class", "completed");
+        itemLabel.setAttribute("class", "item-completed");
         completedCounter++;
       }
       counterFunc();
@@ -60,7 +61,7 @@ function addItem() {
     });
     /* Remove item method */
     trashcan.addEventListener("click", function () {
-      if (itemLabel.getAttribute("class") == "completed") {
+      if (itemLabel.getAttribute("class") == "item-completed") {
         item.remove();
         completedCounter--;
       }
@@ -68,6 +69,7 @@ function addItem() {
         item.remove();
       }
       counterFunc();
+      input.focus();
     });
   }
 };
