@@ -83,6 +83,17 @@ h1{
 }
 li{
   line-height: 1.8em;
+  animation: item-fade-in 0.4s;
+}
+@keyframes item-fade-in{
+  from{
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0%);
+    opacity: 1;
+  }
 }
 li >span:nth-child(1):hover{
   text-decoration: line-through;
