@@ -38,7 +38,7 @@ function addItem() {
     item.appendChild(itemLabel);
 
     const trashcan = document.createElement("span");
-    trashcan.innerHTML = '&#x1F5D1';
+    trashcan.innerHTML = '🗑️';
     trashcan.setAttribute("class", "trashcan");
     item.appendChild(trashcan);
 
