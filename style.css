@@ -48,8 +48,10 @@ h1{
 }
 .inputHTML:focus{
   outline: none;
+  border: 1px solid blue; !!!!!!!
 }
-.inputHTML, #btnOK{
+.inputHTML, button{
+  font-size: 14px;
   animation: enter-text-fade 0.8s 0.8s;
   animation-fill-mode: backwards;
 }
@@ -127,4 +129,9 @@ li >span:nth-child(1):hover{
   padding: 0 0 0 10px;
   font-size: 12px;
   cursor: pointer;
+  opacity: 0.6;
+}
+.trashcan:hover{
+  opacity: 1;
+  transition: opacity 0.3s;
 }
