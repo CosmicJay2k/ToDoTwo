@@ -5,7 +5,6 @@ const counterMsg = document.querySelector('.counterHTML');
 const errorMsg = document.querySelector('.errorHTML');
 
 let completedCounter = 0;
-input.focus();
 
 /* Counter function */
 function counterFunc() {
@@ -27,7 +26,6 @@ function addItem() {
   const text = input.value;
   if (text.length == 0) {
     errorMsg.style.display = "block";
-    input.focus();
   }
   else {
     const item = document.createElement("li");
@@ -44,7 +42,6 @@ function addItem() {
 
     errorMsg.style.display = "none";
     input.value = "";
-    input.focus();
 
     /* Completed or not method */
     itemLabel.addEventListener("click", function () {
@@ -57,7 +54,6 @@ function addItem() {
         completedCounter++;
       }
       counterFunc();
-      input.focus();
     });
     /* Remove item method */
     trashcan.addEventListener("click", function () {
@@ -69,7 +65,6 @@ function addItem() {
         item.remove();
       }
       counterFunc();
-      input.focus();
     });
   }
 };
