@@ -44,14 +44,19 @@ h1{
   animation-fill-mode: backwards;
 }
 .inputHTML{
+  padding: 1px;
   width: 145px;
+  border-radius: 2px;
 }
 .inputHTML:focus{
+  padding: 1px;
   outline: none;
-  border: 1px solid blue; !!!!!!!
+  border: 1px solid blue;
 }
-.inputHTML, button{
-  font-size: 14px;
+.inputHTML, .btn{
+  border: 1px solid black;
+  outline: none;
+  border-radius: 2px;
   animation: enter-text-fade 0.8s 0.8s;
   animation-fill-mode: backwards;
 }
