@@ -43,8 +43,11 @@ h1{
   animation: enter-text-fade 0.8s 0.7s;
   animation-fill-mode: backwards;
 }
-.inputHTML, #btnOK{
+.inputHTML{
   outline: none;
+  width: 145px;
+}
+.inputHTML, #btnOK{
   animation: enter-text-fade 0.8s 0.8s;
   animation-fill-mode: backwards;
 }
@@ -57,6 +60,7 @@ h1{
   }
 }
 .errorHTML{
+  margin: 5px;
   color: red;
   font-size: 10px;
   font-style: italic;
