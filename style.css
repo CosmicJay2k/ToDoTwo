@@ -44,8 +44,10 @@ h1{
   animation-fill-mode: backwards;
 }
 .inputHTML{
-  outline: none;
   width: 145px;
+}
+.inputHTML:focus{
+  outline: none;
 }
 .inputHTML, #btnOK{
   animation: enter-text-fade 0.8s 0.8s;
