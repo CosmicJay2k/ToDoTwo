@@ -11,11 +11,9 @@ body{
   max-width: 300px;
   padding: 10px;
   margin: 0 auto;
-
   text-align: center;
   animation: enter-box-down 0.6s;
   animation-fill-mode: forwards;
-  
 }
 @keyframes enter-box-down{
   0%{
@@ -43,19 +41,9 @@ h1{
   animation: enter-text-fade 0.8s 0.7s;
   animation-fill-mode: backwards;
 }
-.inputHTML{
-  padding: 1px;
-  width: 145px;
-  border-radius: 2px;
-}
-.inputHTML:focus{
-  padding: 1px;
-  outline: none;
-  border: 1px solid blue;
-}
 .inputHTML, .btn{
-  border: 1px solid black;
   outline: none;
+  border: 1px solid black;
   border-radius: 2px;
   animation: enter-text-fade 0.8s 0.8s;
   animation-fill-mode: backwards;
@@ -67,6 +55,16 @@ h1{
   100%{
     opacity: 1;
   }
+}
+.inputHTML{
+  padding: 1px;
+  width: 145px;
+  border-radius: 2px;
+}
+.inputHTML:focus{
+  padding: 1px;
+  outline: none;
+  border: 1px solid blue;
 }
 .errorHTML{
   margin: 5px;
