@@ -123,5 +123,6 @@ li >span:nth-child(1):hover{
 }
 .trashcan{
   padding: 0 0 0 10px;
+  font-size: 12px;
   cursor: pointer;
 }
