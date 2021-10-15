@@ -59,8 +59,9 @@ h1{
 .errorHTML{
   color: red;
   font-size: 10px;
+  font-style: italic;
   display: none;
-  animation: error-flash 2s;
+  animation: error-flash 1s;
 }
 @keyframes error-flash{
   0%{
